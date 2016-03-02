@@ -4,7 +4,7 @@ package com.rupert.fizzbuzz;
  * Hello world!
  *
  */
-public class App 
+public class FizzBuzzifier 
 {
     public static void main( String[] args )
     {
