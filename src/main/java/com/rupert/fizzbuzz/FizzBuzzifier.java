@@ -1,13 +1,18 @@
 package com.rupert.fizzbuzz;
 
-/**
- * Hello world!
- *
- */
-public class FizzBuzzifier 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class FizzBuzzifier {
+    
+	public String fbCheck ( int i ) {
+		
+		if ( i % 3 == 0 && i % 5 == 0 ) {
+			return "BuzzFizz";
+		} else if ( i % 3 == 0 ) {
+			return "Fizz";
+		} else if ( i % 5 == 0 ) {
+			return "Buzz";
+		}
+		
+        return Integer.toString(i);
+ 
     }
 }

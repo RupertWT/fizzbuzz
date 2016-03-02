@@ -1,38 +1,41 @@
 package com.rupert.fizzbuzz;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class FizzBuzzifierTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public FizzBuzzifierTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.Test;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( FizzBuzzifierTest.class );
+public class FizzBuzzifierTest {
+	
+	FizzBuzzifier fb = new FizzBuzzifier();
+   
+	@Test
+    public void one_Returns_1() {
+        assertEquals("1", fb.fbCheck(1));   
     }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+	
+	@Test
+    public void three_Returns_Fizz() {
+        assertEquals("Fizz", fb.fbCheck(3));   
     }
+	
+	@Test
+    public void five_Returns_Buzz() {
+        assertEquals("Buzz", fb.fbCheck(5));   
+    }
+	
+	@Test
+    public void nine_Returns_Fizz() {
+        assertEquals("Fizz", fb.fbCheck(9));   
+    }
+	
+	@Test
+    public void ten_Returns_Fizz() {
+        assertEquals("Buzz", fb.fbCheck(10));   
+    }
+	
+	@Test
+    public void fifteen_Returns_Fizz() {
+        assertEquals("BuzzFizz", fb.fbCheck(15));   
+    }
+	
 }
