@@ -29,13 +29,18 @@ public class FizzBuzzifierTest {
     }
 	
 	@Test
-    public void ten_Returns_Fizz() {
+    public void ten_Returns_Buzz() {
         assertEquals("Buzz", fb.fbCheck(10));   
     }
 	
 	@Test
-    public void fifteen_Returns_Fizz() {
+    public void fifteen_Returns_BuzzFizz() {
         assertEquals("BuzzFizz", fb.fbCheck(15));   
+    }
+	
+	@Test
+    public void seventyFive_Returns_BuzzFizz() {
+        assertEquals("BuzzFizz", fb.fbCheck(75));   
     }
 	
 }
