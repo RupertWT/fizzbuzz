@@ -11,11 +11,11 @@ public class FizzBuzzifierTest2 {
 	@Rule
 	public ExpectedException thrown= ExpectedException.none();
 	
-	FizzBuzzifier2 fb = new FizzBuzzifier2();
+	FizzBuzzifier2 fb2 = new FizzBuzzifier2();
    
 	@Test
     public void one_Returns_1() {
-        assertEquals(true, fb.fbCheck(1));   
+        assertEquals(1, fb2.fbCheck(1));   
     }
 	
 }
